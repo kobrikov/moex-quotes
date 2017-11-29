@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MOEX quotes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+	<body>
+    <section class="quotes">
+      <div class="quotes__inner">
+
+      </div>
+    </section>
+    <p>* Данные предоставляет Московская биржа с задержкой 15 минут.</p>
+
+    <template id="quotes-template" class="hidden">
+      <div class="quotes__item">
+        <div class="quotes__title">
+          <p class="quotes__name"></p>
+          <div class="quotes__extra">
+            <span class="quotes__ticker"></span>
+            <span class="quotes__size"></span>
+            <span class="quotes__prevprice"></span>
+          </div>
+        </div>
+        <div class="quotes__price">
+          <span></span>
+        </div>
+        <div class="quotes__change">
+          <span class="quotes__currency"></span>
+          <span class="quotes__percent"></span>
+        </div>
+      </div>
+    </template>
+
+    <script src="quotes.js"></script>
+	</body>
+</html>
